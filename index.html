@@ -1,0 +1,93 @@
+<!DOCTYPE>
+<html lang ="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>FlipIt</title>
+
+        <!-- CSS -->
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+
+        <!-- your javascript -->
+        <script type="text/javascript" src="/public/js/main.js"></script>
+        <script src="/public/js/jquery.magnific-popup.min.js"></script> 
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="firstsection">
+            <h1 class="remove-bottom" style="margin-top: 100px">FlipIt</h1>
+            <h5 id = "tagline">A fresh and fun way to flip through flyers of campus events.</h5>
+            <hr />
+        </div>
+        <div class="one-third column">
+            <h3>Visual</h3>
+            <p>We aim to change the way you look at a flyer to change the way we look for events. Explore our sleek, simple interface design and keep up to date with what's happening on campus. </p>
+        </div>
+        <div class="one-third column">
+            <h3>Virtual</h3>
+            <p>Guilty of throwing away paper flyers? So are we. Let's turn the tables and save some paper. Promoters save printing money and we save waste. It's a win-win situation.</p>
+        </div>
+        <div class="one-third column">
+            <h3>Vocal</h3>
+            <p>Want students to hear about your event? Simply click the Add Event button to post your flyer. It's as easy as that! 
+        </div>  
+        <hr />
+    <div class="events">
+        <!-- link that opens popup -->
+        <a class="popup-with-form button" href="#test-form">Add Event</a>
+
+    </div>
+
+    
+
+<div class="grid events-grid cf">
+    <ul class="cf" id="events-grid-list">
+    </ul>
+    </div>
+    <hr />
+    <div class="footer">
+        <h3 id="footertxt">Creators</h3>
+        <div class="circles cf">
+            <div class="circleimage">
+                <img src="/public/img/Debbie.jpg">
+               <p class="circletxt">Debbie Ly</p>
+            </div> 
+            <div class="circleimage">
+                <img src="/public/img/Riddhi.png">
+               <p class="circletxt">Riddhi Sanwal</p>
+            </div>
+            <div class="circleimage">
+                <img src="/public/img/Bianca.jpg">
+                <p class="circletxt">Bianca Pham</p>
+            </div>
+        </div>
+    </div> 
+
+<!-- form itself -->
+  <form action="create" method="post" id="test-form" class="mfp-hide white-popup-block"> 
+  <fieldset>
+    <label for="image">Image Link</label>
+    <input type="text" name="image" id="image" class="text ui-widget-content ui-corner-all" />    
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+    <label for="date">Date & Time</label>
+    <input type="text" name="date" id="date" value="" class="text ui-widget-content ui-corner-all" />
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description" value="" class="text ui-widget-content ui-corner-all" />
+    <button class="btn" id="create">Create New Event</button>
+  </fieldset>
+  </form>
+
+
+</body>
+</html>

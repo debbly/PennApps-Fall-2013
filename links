@@ -1,0 +1,57 @@
+CSS WORKSHOP:
+http://jsfiddle.net/jtxNE/
+
+JS WORKSHOP:
+read this book to learn javascript:
+https://www.google.com/search?q=javascript+the+good+parts
+
+experiment with what javascript can do using jQuery / its documentation:
+http://jquery.com/
+
+
+NODE AND SERVER COMMANDS:
+
+
+to start server:
+go to folder in terminal
+type
+node app.js
+
+
+GIT COMMANDS:
+
+
+to commit:
+git commit -am "your message"
+
+to add new files (dont forget this, i do a lot):
+git add your-file.html
+
+
+push and pull:
+git push origin master
+git pull 
+
+
+get status of commits:
+git status 
+
+
+
+Modal Dialog:
+http://dimsemenov.com/plugins/magnific-popup/
+
+RESOURCES AND DOCS:
+
+for node:
+http://howtonode.org/hello-node
+http://net.tutsplus.com/tutorials/javascript-ajax/introduction-to-express/
+
+
+for css/html:
+http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/
+http://www.barelyfitz.com/screencast/html-training/css/positioning/
+
+
+git:
+http://sixrevisions.com/resources/git-tutorials-beginners/

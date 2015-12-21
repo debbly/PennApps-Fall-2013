@@ -1,0 +1,142 @@
+@import "base.css";
+@import "skeleton.css";
+@import "layout.css";
+@import "clearfix.css";
+@import "common.css";
+@import "magnific-popup.css";
+
+
+/*
+box-shadow: 2px 2px 15px rgba(0,0,0,1);
+
+*/
+
+#tagline {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 25px;
+	margin-bottom: 75px;
+	margin-top: 35px;
+}
+
+/* FLIP CODE */
+
+/* entire container, keeps perspective */
+.flip-container {
+	-webkit-perspective: 1000;
+}
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		-webkit-transform: rotateY(180deg) rotateZ(0);
+		-moz-transform: rotateY(180deg) rotateZ(0);
+		transform: rotateY(180deg) rotateZ(0);
+		z-index: 10000;
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	-webkit-transition: 0.6s;
+	-moz-transition: 0.6s;
+	transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	background-repeat: no-repeat;
+	background-position:center; 
+  	background-size: cover;
+	z-index: 900;
+
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		-webkit-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+
+		-moz-transform: rotateX(0deg) rotateY(0deg);
+		-moz-transform-style: preserve-3d;
+		-moz-backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-o-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		-moz-transition: all .4s ease-in-out;
+		-webkit-transition: all .4s ease-in-out;
+		transition: all .4s ease-in-out;
+
+}
+
+/* back, initially hidden pane */
+.back {
+		z-index: 1000;
+		background: white;
+
+		-webkit-transform: rotateX(0deg) rotateY(0deg);
+		-moz-transform: rotateX(0deg) rotateY(0deg);
+
+		-webkit-transform: rotateY(-180deg);
+		-webkit-transform-style: preserve-3d;
+		-webkit-backface-visibility: hidden;
+
+		-moz-transform: rotateY(-180deg);
+		-moz-transform-style: preserve-3d;
+		-moz-backface-visibility: hidden;
+
+		/* -- transition is the magic sauce for animation -- */
+		-o-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		-moz-transition: all .4s ease-in-out;
+		-webkit-transition: all .4s ease-in-out;
+		transition: all .4s ease-in-out;
+
+		
+}
+
+#add {
+	font-size: 30px;
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.popup-with-form.button {
+	font-weight: 500px;
+	font-family: helvetica;
+	width: 500px;
+	height: 50px;
+	background-color: #808080;
+	opacity: 1.0;
+	text-align: center;
+	line-height: 50px;
+}
+.btn: hover {
+	background-color: #8F8FBD;
+	opacity: .5
+	cursor: pointer;
+}
+
+.validateTips {
+	font-size: 20px;
+}
+
+.footer {
+	margin-bottom: 100px;
+}
